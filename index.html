@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <title>Class Schedule Lookup</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Find your class schedule by roll number and day.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">🌙 Dark Mode</button>
+
+  <main class="container">
+    <h1>Check Your Class</h1>
+
+    <form onsubmit="lookupClass(); return false;">
+      <div class="form-row">
+        <label for="rollInput" class="visually-hidden">Roll Number</label>
+        <input type="text" id="rollInput" name="roll" placeholder="Enter your Roll Number" required>
+
+        <label for="daySelect" class="visually-hidden">Select Day</label>
+        <select id="daySelect" name="day">
+          <option value="MON">Monday</option>
+          <option value="TUE">Tuesday</option>
+          <option value="WED">Wednesday</option>
+          <option value="THU">Thursday</option>
+          <option value="FRI">Friday</option>
+        </select>
+
+        <button type="submit">Show Class</button>
+      </div>
+    </form>
+
+    <section id="result" aria-live="polite"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
