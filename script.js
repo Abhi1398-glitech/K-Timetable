@@ -82,7 +82,7 @@ function lookupClass() {
   let output = `
     <h2>Schedule for <span class="roll">${roll}</span> on 
     <span class="day">${day}</span></h2>
-    <table><tr><th>Time</th><th>Subject</th></tr>`;
+    <table><tr><th>Time</th><th>Room Subject</th></tr>`;
 
   const orderedTimes = Object.keys(classes).sort((a, b) => {
     const toNum = t => parseFloat(t.split('-')[0].replace(':', '.'));
@@ -200,4 +200,5 @@ function setupCustomDropdown() {
   selectEl.parentNode.insertBefore(container, selectEl);
   selectEl.remove(); // Remove native <select>
 }
+
 
