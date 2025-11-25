@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // 🌐 Load and process JSON class data
 function loadClassData() {
-  fetch('classes.json')
+  fetch('timetable.json')
     .then(response => response.json())
     .then(data => {
       classData = data;
@@ -200,6 +200,7 @@ function setupCustomDropdown() {
   selectEl.parentNode.insertBefore(container, selectEl);
   selectEl.remove(); // Remove native <select>
 }
+
 
 
 
