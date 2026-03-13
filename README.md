@@ -27,8 +27,6 @@ The project uses **Python for processing timetable Excel files** and a **web int
 - Python
 - Pandas
 - Excel
-- **Unfortunately BackendCode is not OpenSource**
-- if you want to know more can contact me 
 ---
 
 ## ⚙️ How It Works
